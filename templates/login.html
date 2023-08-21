@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+<form action="login" method="post" class="form login">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Enter Your Username" class="input"><br>
+    <input type="password" name="password" placeholder="Enter Your Password" class="input"><br>
+    <input type="submit" class="submit">
+</form>
+{% for msg in messages %}
+<p class="message">{{msg}}</p>
+{% endfor %}
+</body>
+</html>

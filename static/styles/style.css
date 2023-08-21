@@ -1,0 +1,39 @@
+body {
+    background-color:#586170
+}
+.heading{
+    text-align:center;
+    margin-top:70px;
+    color:#33373d;
+}
+.login{
+    margin-top:60px;
+}
+.form{
+      display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            flex-direction:column;
+}
+.input{
+    height: 38px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.submit{
+    height: 35px;
+    width: 217px;
+    margin-top: 13px;
+    color:white;
+    background: #3e444d;
+    border: 2px solid #282d36;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.message{
+    color:red;
+    text-align:center;
+    font-weight:bold;
+}
